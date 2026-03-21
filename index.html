@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Scientific Glossary — de la Serna Tuya, Juan Moisés</title>
+<meta name="description" content="Technical terms used across datasets and publications. Each entry includes definition, formula, and links to datasets where the variable appears.">
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"DefinedTermSet",
+  "name":"Scientific Glossary",
+  "description":"Technical terms used across datasets and publications. Each entry includes definition, formula, and links to datasets where the variable appears.",
+  "url":"https://juanmoisesd.github.io/glossary-en/",
+  "author":{"@type":"Person","name":"de la Serna Tuya, Juan Moisés","identifier":"https://orcid.org/0000-0002-8401-8018"}
+}</script>
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI', Arial, sans-serif;background:#0d1117;color:#c9d1d9;
+     line-height:1.7;direction:ltr;font-size:15px}
+a{color:#58a6ff;text-decoration:none}
+a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:12px 24px;
+     position:sticky;top:0;z-index:100;display:flex;align-items:center;
+     gap:20px;flex-wrap:wrap;justify-content:flex-start}
+nav .brand{font-weight:700;color:#f0f6fc;font-size:14px;margin-right:auto}
+nav a{color:#8b949e;font-size:13px}
+nav a:hover,nav a.active{color:#58a6ff}
+.hero{background:linear-gradient(160deg,#1a2332,#0d1117);
+      padding:56px 24px;text-align:center;border-bottom:1px solid #30363d}
+.hero h1{font-size:clamp(20px,3.5vw,36px);color:#f0f6fc;margin-bottom:10px;font-weight:700}
+.hero .sub{color:#8b949e;max-width:680px;margin:0 auto 20px;font-size:14px}
+.container{max-width:1060px;margin:0 auto;padding:32px 20px}
+h2{font-size:22px;color:#f0f6fc;margin:32px 0 16px;padding-bottom:8px;
+    border-bottom:2px solid #003087}
+h3{font-size:16px;color:#f0f6fc;margin:20px 0 10px}
+p{margin-bottom:14px;color:#c9d1d9}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600}
+.badge-orcid{background:#1a3a1a;color:#7ee787;border:1px solid #3fb950}
+.badge-doi{background:#0d2337;color:#58a6ff;border:1px solid #1f6feb}
+footer{background:#161b22;border-top:1px solid #30363d;padding:24px;
+        text-align:center;font-size:12px;color:#484f58;margin-top:40px}
+footer a{color:#58a6ff}
+
+.az-index{background:#161b22;border:1px solid #30363d;border-radius:8px;
+           padding:16px 20px;margin-bottom:28px;font-size:13px;line-height:2}
+.term{background:#161b22;border:1px solid #30363d;border-radius:10px;
+       padding:24px;margin-bottom:24px;scroll-margin-top:70px}
+.term h2{border-bottom:2px solid #003087;padding-bottom:8px;margin-top:0}
+.formula{background:#0d1117;padding:8px 14px;border-radius:4px;font-family:monospace;
+          display:block;margin:8px 0;color:#a5d6ff;border:1px solid #30363d}
+.context-box{background:#0d1117;border-left:3px solid #003087;
+              padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0;font-size:13px}
+.sources{margin:6px 0 0 20px;font-size:12px;color:#8b949e}
+.search-wrap{margin-bottom:20px}
+.search-wrap input{width:100%;padding:10px 16px;background:#161b22;
+                    border:1px solid #30363d;border-radius:6px;color:#c9d1d9;
+                    font-size:14px;outline:none}
+.search-wrap input:focus{border-color:#58a6ff}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<nav>
+  <span class="brand">🇬🇧 de la Serna Tuya, Juan Moisés</span>
+  <a href="https://juanmoisesd.github.io/research-hub-en/" class="">Home</a> <a href="https://juanmoisesd.github.io/research-hub-en/#datasets" class="">Datasets</a> <a href="https://juanmoisesd.github.io/glossary-en/" class="active">Glossary</a> <a href="https://juanmoisesd.github.io/wiki-en/" class="">Wiki</a> <a href="https://juanmoisesdelaserna.es" class="">About</a>
+</nav>
+<div class="hero">
+  <h1>🇬🇧 Scientific Glossary</h1>
+  <p class="sub">Technical terms used across datasets and publications. Each entry includes definition, formula, and links to datasets where the variable appears.</p>
+  <span class="badge badge-orcid">ORCID 0000-0002-8401-8018</span>
+  <span class="badge badge-doi">3 términos</span>
+</div>
+<div class="container">
+  <div class="search-wrap">
+    <input type="text" id="glossary-search" placeholder="🔍 Search terms..."
+           oninput="filterTerms()">
+  </div>
+  <div class="az-index"><a href="#aging_index">Aging Index</a> · <a href="#dependency_ratio">Dependency Ratio</a> · <a href="#ncra_risk_score">NCRA Risk Score</a></div>
+  <div id="terms-container">
+<div class="term" id="aging_index">
+  <h2>Aging Index</h2>
+  <div class="term-body">
+    <p><strong>Formula:</strong>
+      <code class="formula">Aging Index = (Population 65+ / Population 0-14) × 100</code></p>
+    <p>A demographic indicator that measures the ratio of the elderly population (65+) to the young population (0-14), expressed per 100 young people. Values above 100 indicate that the elderly population exceeds the young population, signaling an advanced stage of demographic aging.</p>
+    <p><em>A value of 50 means there are 50 elderly persons for every 100 young people. Values above 100 indicate demographic inversion — more elderly than young.</em></p>
+    <div class="context-box">
+      <strong>Context:</strong> Latin America showed average aging index values of 25-30 in 2000, rising to 45-60 by 2023, reflecting the rapid demographic transition underway in the region.
+    </div>
+    <p><strong>Primary sources:</strong>
+      <ul class="sources"><li>WHO Global Health Observatory</li><li>PAHO Core Indicators</li><li>ECLAC Statistics</li></ul></p>
+    <p><strong>See also:</strong> <a href="#dependency_ratio">Dependency Ratio</a> · <a href="#demographic_dividend_index">Demographic Dividend Index</a> · <a href="#ncra_risk_score">Ncra Risk Score</a></p>
+    <p>Appears in: <a href="https://juanmoisesd.github.io/research-hub-en/#datasets" class="badge badge-doi">Browse datasets →</a></p>
+  </div>
+</div>
+<div class="term" id="dependency_ratio">
+  <h2>Dependency Ratio</h2>
+  <div class="term-body">
+    <p><strong>Formula:</strong>
+      <code class="formula">Dependency Ratio = ((Population 0-14 + Population 65+) / Population 15-64) × 100</code></p>
+    <p>The ratio of the dependent population (those too young or too old to work: ages 0-14 and 65+) to the working-age population (15-64), expressed per 100 working-age adults. It measures the economic burden placed on the productive population.</p>
+    <p><em>A ratio of 50 means 50 dependents per 100 working-age persons. High values strain social security, healthcare, and pension systems.</em></p>
+    <div class="context-box">
+      <strong>Context:</strong> Latin American countries show dependency ratios declining from 70-80 in 2000 to 50-65 in 2023 as younger cohorts age into the workforce, though this dividend window is narrowing.
+    </div>
+    <p><strong>Primary sources:</strong>
+      <ul class="sources"><li>World Bank Open Data</li><li>PAHO Core Indicators</li><li>ECLAC Demographics</li></ul></p>
+    <p><strong>See also:</strong> <a href="#aging_index">Aging Index</a> · <a href="#demographic_dividend_index">Demographic Dividend Index</a></p>
+    <p>Appears in: <a href="https://juanmoisesd.github.io/research-hub-en/#datasets" class="badge badge-doi">Browse datasets →</a></p>
+  </div>
+</div>
+<div class="term" id="ncra_risk_score">
+  <h2>NCRA Risk Score</h2>
+  <div class="term-body">
+    <p><strong>Formula:</strong>
+      <code class="formula">NCRA Risk Score = f(aging_index, dependency_ratio, demographic_dividend_index, ...) [see methodology]</code></p>
+    <p>The Neuroeconomic Cognitive Risk Assessment (NCRA) Risk Score is a composite indicator (0-100) developed by de la Serna Tuya that integrates demographic, psychological, and economic variables to assess population-level vulnerability in cognitive and economic decision-making. Higher scores indicate greater risk.</p>
+    <p><em>Scores 0-30: Low risk. 31-60: Moderate risk. 61-80: High risk. 81-100: Critical risk. The score is not diagnostic at individual level — it is a population-level indicator.</em></p>
+    <div class="context-box">
+      <strong>Context:</strong> Developed as part of the NCRA Framework (V13). Applied to 11 Latin American countries (2000-2023). First application of neuroeconomic risk assessment to population-level demographic data.
+    </div>
+    <p><strong>Primary sources:</strong>
+      <ul class="sources"><li>de la Serna Tuya (2024). NCRA LatAm Dataset v1.0. Zenodo.</li><li>NCRA Methodology Document</li></ul></p>
+    <p><strong>See also:</strong> <a href="#aging_index">Aging Index</a> · <a href="#dependency_ratio">Dependency Ratio</a> · <a href="#demographic_dividend_index">Demographic Dividend Index</a></p>
+    <p>Appears in: <a href="https://juanmoisesd.github.io/research-hub-en/#datasets" class="badge badge-doi">Browse datasets →</a></p>
+  </div>
+</div></div>
+</div>
+<footer>
+  Scientific Glossary · de la Serna Tuya, Juan Moisés · ORCID: 0000-0002-8401-8018 · Universidad Internacional de La Rioja (UNIR)<br>
+  <a href="https://juanmoisesdelaserna.es">juanmoisesdelaserna.es</a> ·
+  <a href="https://juanmoisesd.github.io/research-hub/">🌐 Main Hub</a> ·
+  Last updated: 2026-03-21
+</footer>
+<script>
+function filterTerms() {
+  const q = document.getElementById('glossary-search').value.toLowerCase();
+  document.querySelectorAll('.term').forEach(t => {
+    t.classList.toggle('hidden', q && !t.innerText.toLowerCase().includes(q));
+  });
+}
+</script>
+</body>
+</html>
